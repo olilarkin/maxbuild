@@ -1,0 +1,4 @@
+LIBRARY mbmaxcpp.mxe
+
+EXPORTS
+	main

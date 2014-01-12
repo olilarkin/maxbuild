@@ -1,0 +1,4 @@
+LIBRARY mbmspcpp.mxe
+
+EXPORTS
+	main
