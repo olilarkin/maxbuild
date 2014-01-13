@@ -1,3 +1,5 @@
 *.mxo
 *.mxe
 *.mxe64
+
+/projects/
