@@ -1,17 +1,16 @@
-maxbuild v-0-2
+maxbuild v-0-3
 ================
 
-Oli Larkin, 2009-2014
+Oli Larkin, 2009-2016
 York, UK
 
 
 a folder structure and IDE projects for building cross platform Max MSP externals. It includes a python script for 
 rapidly cloning a project, doing a find and replace on strings in filenames and inside the source code itself
 
-IDE projects are for MSVS2010 and Xcode3 (hopefully it will work in more recent versions too)
+IDE projects are for MSVS2010 and Xcode7
 
-it includes submodules for the Max SDK (v6) and for Graham Wakefield's MaxCPP, so when you check out the project, you may
-want to do it like this in order to checkout the submodules at the same time.
+It includes submodules for the Max SDK and for Graham Wakefield's MaxCPP, so when you check out the project, you may want to do it like this in order to checkout the submodules at the same time.
 
 git clone --recursive https://github.com/olilarkin/maxbuild.git
 

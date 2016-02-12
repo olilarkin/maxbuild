@@ -3,3 +3,6 @@
 *.mxe64
 
 /projects/
+examples/*/*.xcodeproj/xcuserdata/*
+examples/*/build*
+*.pbxuser

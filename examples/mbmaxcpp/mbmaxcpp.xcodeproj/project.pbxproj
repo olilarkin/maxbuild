@@ -16,7 +16,7 @@
 		22CF11AD0EE9A8840054F513 /* mbmaxcpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mbmaxcpp.cpp; sourceTree = "<group>"; };
 		2FBBEAE508F335360078DB84 /* mbmaxcpp.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mbmaxcpp.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3927601882F00700F74074 /* maxcpp6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = maxcpp6.h; path = ../../maxcpp/maxcpp/maxcpp6.h; sourceTree = SOURCE_ROOT; };
-		4F4FD6E4187F2577005FB2B9 /* commonsyms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = commonsyms.c; path = "../../max-sdk/c74support/max-includes/common/commonsyms.c"; sourceTree = SOURCE_ROOT; };
+		4F4FD6E4187F2577005FB2B9 /* commonsyms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = commonsyms.c; path = "../../max-sdk/source/c74support/max-includes/common/commonsyms.c"; sourceTree = SOURCE_ROOT; };
 		4F9C374D1881688400A88A88 /* common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = common.xcconfig; path = ../../common.xcconfig; sourceTree = SOURCE_ROOT; };
 		4F9C37511881689300A88A88 /* mbmaxcpp.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = mbmaxcpp.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +99,9 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+			};
 			buildConfigurationList = 2FBBEACF08F335010078DB84 /* Build configuration list for PBXProject "mbmaxcpp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -151,6 +154,8 @@
 		2FBBEAD008F335010078DB84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -164,6 +169,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F9C37511881689300A88A88 /* mbmaxcpp.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				OTHER_LDFLAGS = "$(C74_SYM_LINKER_FLAGS)";
@@ -174,6 +180,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F9C37511881689300A88A88 /* mbmaxcpp.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				OTHER_LDFLAGS = "$(C74_SYM_LINKER_FLAGS)";
 			};

@@ -1,0 +1,4 @@
+LIBRARY mbmaxc.mxe
+
+EXPORTS
+	main

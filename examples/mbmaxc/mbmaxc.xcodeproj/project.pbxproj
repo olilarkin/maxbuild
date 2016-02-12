@@ -7,20 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22CF11AE0EE9A8840054F513 /* mbmspcpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CF11AD0EE9A8840054F513 /* mbmspcpp.cpp */; };
-		4F39277C1882F0BC00F74074 /* maxcpp6.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F39277B1882F0BC00F74074 /* maxcpp6.h */; };
+		22CF11AE0EE9A8840054F513 /* mbmaxc.c in Sources */ = {isa = PBXBuildFile; fileRef = 22CF11AD0EE9A8840054F513 /* mbmaxc.c */; };
 		4F4FD6E5187F2577005FB2B9 /* commonsyms.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FD6E4187F2577005FB2B9 /* commonsyms.c */; };
-		4F4FD71E187F271F005FB2B9 /* MaxAudioAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F4FD71D187F271F005FB2B9 /* MaxAudioAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22CF11AD0EE9A8840054F513 /* mbmspcpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mbmspcpp.cpp; sourceTree = "<group>"; };
-		2FBBEAE508F335360078DB84 /* mbmspcpp~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mbmspcpp~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F39277B1882F0BC00F74074 /* maxcpp6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = maxcpp6.h; path = ../../maxcpp/maxcpp/maxcpp6.h; sourceTree = SOURCE_ROOT; };
+		22CF11AD0EE9A8840054F513 /* mbmaxc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mbmaxc.c; sourceTree = "<group>"; };
+		2FBBEAE508F335360078DB84 /* mbmaxc.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mbmaxc.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4FD6E4187F2577005FB2B9 /* commonsyms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = commonsyms.c; path = "../../max-sdk/source/c74support/max-includes/common/commonsyms.c"; sourceTree = SOURCE_ROOT; };
-		4F4FD71D187F271F005FB2B9 /* MaxAudioAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaxAudioAPI.framework; path = "../../max-sdk/source/c74support/msp-includes/MaxAudioAPI.framework"; sourceTree = SOURCE_ROOT; };
-		4F9C3766188168F200A88A88 /* common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = common.xcconfig; path = ../../common.xcconfig; sourceTree = SOURCE_ROOT; };
-		4F9C3769188168FF00A88A88 /* mbmspcpp.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = mbmspcpp.xcconfig; sourceTree = "<group>"; };
+		4F9C374D1881688400A88A88 /* common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = common.xcconfig; path = ../../common.xcconfig; sourceTree = SOURCE_ROOT; };
+		4F9C37511881689300A88A88 /* mbmaxc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = mbmaxc.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +24,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F4FD71E187F271F005FB2B9 /* MaxAudioAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +33,8 @@
 		089C166AFE841209C02AAC07 /* iterator */ = {
 			isa = PBXGroup;
 			children = (
-				22CF11AD0EE9A8840054F513 /* mbmspcpp.cpp */,
-				4F39277F1882F0C000F74074 /* supporting */,
+				22CF11AD0EE9A8840054F513 /* mbmaxc.c */,
+				4F3927671882F05100F74074 /* supporting files */,
 				19C28FB4FE9D528D11CA2CBB /* Products */,
 			);
 			name = iterator;
@@ -48,21 +43,19 @@
 		19C28FB4FE9D528D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FBBEAE508F335360078DB84 /* mbmspcpp~.mxo */,
+				2FBBEAE508F335360078DB84 /* mbmaxc.mxo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4F39277F1882F0C000F74074 /* supporting */ = {
+		4F3927671882F05100F74074 /* supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				4F4FD71D187F271F005FB2B9 /* MaxAudioAPI.framework */,
-				4F9C3766188168F200A88A88 /* common.xcconfig */,
-				4F9C3769188168FF00A88A88 /* mbmspcpp.xcconfig */,
+				4F9C374D1881688400A88A88 /* common.xcconfig */,
+				4F9C37511881689300A88A88 /* mbmaxc.xcconfig */,
 				4F4FD6E4187F2577005FB2B9 /* commonsyms.c */,
-				4F39277B1882F0BC00F74074 /* maxcpp6.h */,
 			);
-			name = supporting;
+			name = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,7 +65,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F39277C1882F0BC00F74074 /* maxcpp6.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +87,7 @@
 			);
 			name = "max-external";
 			productName = iterator;
-			productReference = 2FBBEAE508F335360078DB84 /* mbmspcpp~.mxo */;
+			productReference = 2FBBEAE508F335360078DB84 /* mbmaxc.mxo */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +98,7 @@
 			attributes = {
 				LastUpgradeCheck = 0720;
 			};
-			buildConfigurationList = 2FBBEACF08F335010078DB84 /* Build configuration list for PBXProject "mbmspcpp" */;
+			buildConfigurationList = 2FBBEACF08F335010078DB84 /* Build configuration list for PBXProject "mbmaxc" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -147,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22CF11AE0EE9A8840054F513 /* mbmspcpp.cpp in Sources */,
+				22CF11AE0EE9A8840054F513 /* mbmaxc.c in Sources */,
 				4F4FD6E5187F2577005FB2B9 /* commonsyms.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,37 +163,31 @@
 		};
 		2FBBEAE108F335360078DB84 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F9C3769188168FF00A88A88 /* mbmspcpp.xcconfig */;
+			baseConfigurationReference = 4F9C37511881689300A88A88 /* mbmaxc.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../max-sdk/c74support/msp-includes\"",
-				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				OTHER_LDFLAGS = "$(C74_SYM_LINKER_FLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.${BUNDLE_DEVELOPER}.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Debug;
 		};
 		2FBBEAE208F335360078DB84 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F9C3769188168FF00A88A88 /* mbmspcpp.xcconfig */;
+			baseConfigurationReference = 4F9C37511881689300A88A88 /* mbmaxc.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../max-sdk/c74support/msp-includes\"",
-				);
 				OTHER_LDFLAGS = "$(C74_SYM_LINKER_FLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.${BUNDLE_DEVELOPER}.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FBBEACF08F335010078DB84 /* Build configuration list for PBXProject "mbmspcpp" */ = {
+		2FBBEACF08F335010078DB84 /* Build configuration list for PBXProject "mbmaxc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2FBBEAD008F335010078DB84 /* Debug */,
