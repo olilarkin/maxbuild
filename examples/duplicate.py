@@ -117,7 +117,7 @@ def main():
       sys.exit(1)
         
     print "copying " + input + " folder to " + output
-    copytree(input, output, ignore=ignore_patterns('*.mxo', '*.mxe', '*.exe', '*.dmg', '*.pkg', '*.mpkg', '*.svn', '*.ncb', '*.suo', '*sdf', 'ipch', 'build-*', '*.layout', '*.depend', '.DS_Store' ))
+    copytree(input, output, ignore=ignore_patterns('*.mxo', '*.mxe', '*.exe', '*.dmg', '*.pkg', '*.mpkg', '*.svn', '*.ncb', '*.suo', '*sdf', 'ipch', 'build-*', '*.layout', '*.depend', '.DS_Store', 'xcuserdata*' ))
     cpath = os.path.join(os.getcwd(), output)
 
     #replace manufacturer name strings
