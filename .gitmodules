@@ -1,6 +1,6 @@
 [submodule "maxcpp"]
 	path = maxcpp
-	url = https://github.com/olilarkin/maxcpp.git
+	url = git@github.com:grrrwaaa/maxcpp.git
 [submodule "max-sdk"]
 	path = max-sdk
 	url = git@github.com:Cycling74/max-sdk.git
