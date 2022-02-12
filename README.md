@@ -1,3 +1,5 @@
+ARCHIVED - use https://github.com/Cycling74/min-devkit instead
+
 maxbuild v-0-3
 ================
 
